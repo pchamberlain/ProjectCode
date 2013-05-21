@@ -20,5 +20,20 @@ public String roll() {
 	return ret;
 }
 
-public void endTurn() {
+public void endTurn(int player) {
+
+	gameBoard.setMarkers(player);
+	gameBoard.removeMarkers();
+	}
+
+public void crapOut() {
+
+	gameBoard.removeMarkers
+	}
 	
+public boolean makePairs(int pairOne, int pairTwo) {
+
+	}
+
+		
+		
