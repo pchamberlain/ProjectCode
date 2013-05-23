@@ -1,39 +1,45 @@
 public class Player {
 
-private String name;
-private int numConquered, number;
-private boolean isActive;
+	private int numConquered, number;
+	private boolean isActive;
 
-/**=================================
+/**
+*=================================
 *	CONSTRUCTOR
-*/==================================
+*=================================
+*/
 
-	public Player(String nameIn, int numberIn) {
-
-		name = nameIn;
+	public Player(int numberIn) 
+	{
 		numConquered = 0;
-		number = numberIn
-		isActive = false
+		number = numberIn;
+		isActive = false;
 	}
 
-/**=================================
+/**
+*=================================
 *	METHODS
-*/==================================
+*=================================
+*/
 
-public void setActive(boolean active) {
-	isActive = active;
+	public void setActive(boolean active) 
+	{
+		isActive = active;
 	}
 
-public boolean isActive(boolean active) {
-	return isActive;
+	public boolean isActive() 
+	{
+		return isActive;
 	}
 
-public int getNumConquered() {
-	return numConquered;
+	public int getNumConquered() 
+	{
+		return numConquered;
 	}
 
-public void addConquered() {
-	numCOnquered++;
+	public void setConquered(int con) 
+	{
+		numConquered = con;
 	}
 
 }//end class
